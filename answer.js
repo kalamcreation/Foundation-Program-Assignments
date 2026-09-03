@@ -52,8 +52,24 @@ function validateUsername(username) {
   return "Available";
 }
 
-console.log(validateUsername("Admin_Kalam"));
 
+// Question No. 4: Dhaka CNG Fare Meter
+function getCngFare(distance, isNight = false, waitingMinutes = 0) {
 
+  let fare = 50;
 
+  if (distance > 2) {
+    const extraKm = distance - 2;
+    fare += extraKm * 15;
+  }
 
+  fare += waitingMinutes * 2;
+
+  if (isNight) {
+    fare = fare * 1.2; // Adding 20% is the same as multiplying by 1.2
+  }
+  
+  return fare;
+}
+
+console.log(getCngFare(5, true));
