@@ -100,5 +100,3 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
 
   return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 };
-
-console.log(getChaseVerdict(200, 199, 1)); 
