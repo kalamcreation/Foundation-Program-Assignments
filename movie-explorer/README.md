@@ -1,16 +1,70 @@
-# React + Vite
+# 🎬 MovieExplorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A responsive Movie Explorer web application built with React that lets users browse TV shows and movies, search by title, and view detailed information in an interactive modal.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Overview
 
-## React Compiler
+**MovieExplorer** is a modern, single-page React application that provides a clean and intuitive interface for discovering TV shows and movies. Powered by the free [TVMaze API](https://www.tvmaze.com/api), it delivers real-time data including posters, ratings, genres, and summaries.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app focuses on **performance**, **accessibility**, and a **responsive user experience** across mobile, tablet, and desktop devices.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Live Demo
+
+🔗 **Live URL:** [https://movie-explorer.vercel.app]
+---
+
+## ✨ Features
+
+### 🏠 Home Page
+- **Hero Banner** — Eye-catching gradient hero with a clear call-to-action
+- **Sticky Navbar** — Brand logo + pill-style navigation with active page highlight
+- **Footer** — Copyright info and quick links
+
+### 🎞️ Movies Listing Page
+- **Search Bar** — Real-time debounced search (400ms) using TVMaze `/search/shows` endpoint
+- **Responsive Grid** — 2 / 3 / 4 / 5 column layout across breakpoints
+- **Movie Cards** — Poster, title, rating, release year, and details button
+- **Loading & Error States** — Skeleton spinner while fetching, user-friendly error messages
+
+### 🎬 Movie Details Modal
+- Large backdrop image with gradient overlay
+- Title, rating, release date, language, status, and genres
+- Full HTML-stripped summary
+- **Closable via:** ✕ button, Close button, Escape key, or backdrop click
+- Body scroll lock while open
+
+### 📱 UX & Accessibility
+- Fully responsive (mobile-first design)
+- Keyboard support (`Escape` to close modal)
+- Lazy-loaded images for faster rendering
+- Semantic HTML and ARIA labels on interactive controls
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React 18** | Component-based UI library |
+| **Vite** | Lightning-fast build tool and dev server |
+| **React Router v6** | Client-side routing |
+| **Tailwind CSS v3** | Utility-first styling |
+| **TVMaze API** | Free movie/show database |
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** `>= 20.19` or `>= 22.12` ([Download](https://nodejs.org/))
+- **npm** `>= 10.x` (comes with Node.js)
+- **Git** ([Download](https://git-scm.com/))
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/USERNAME/movie-explorer.git
+   cd movie-explorer
