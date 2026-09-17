@@ -10,10 +10,8 @@ html, body, #root {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -22,7 +20,6 @@ html, body, #root {
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
 }
-
 
 .line-clamp-2 {
   display: -webkit-box;

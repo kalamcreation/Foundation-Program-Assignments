@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 flex">
         <Hero />
       </main>
       <Footer />
